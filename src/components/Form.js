@@ -37,7 +37,7 @@ import React, { Component } from 'react'
                <div>
                    <label>Username</label>
                    <input type ="text"
-                    defaulValue={username} 
+                    defaultValue={username} 
                     onChange={this.handleUserNameChange}/>
                </div>
                <div>
