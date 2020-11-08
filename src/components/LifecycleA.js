@@ -19,13 +19,29 @@ import LifecycleB from './LifecycleB'
      componentDidMount(){
         console.log('LifecycleA componentDidMount')
      }
-     
+     shouldComponentUpdate(){
+         console.log('LifecycleA  shouldComponentUpdate')
+         return true;
+     }
+     getSnapshotBeforeUpdate(){
+         console.log('lifecycleA getSnapshotBeforeUpdate')
+         return null;
+     }
+     componentDidUpdate(){
+        console.log('LifecycleA componentDidUpdate')
+     }
+
+     changeState=()=>{
+         this.setState({
+             name:'Tanjilul'
+         })
+     }
     render() {
         console.log('render A')
         return (
             <div>
             <div>LifecycleA </div>
-                
+                <button onClick={this.changeState}>Change State</button>
                 <LifecycleB/>
             </div>
             
