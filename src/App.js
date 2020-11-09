@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 // import logo from './logo.svg';
 import './App.css';
-import ParentComp from './components_new/ParentComp';
+//import FocusInput from './components_new/FocusInput';
+import FRParentInput from './components_new/FRParentInput';
+//import ParentComp from './components_new/ParentComp';
+//import RefsDemo from './components_new/RefsDemo';
 //import PureComp from './components_new/PureComp';
 // import Greet from './components/Greet'
 // import Welcome from './components/Welcome'
@@ -30,9 +33,11 @@ class App extends Component{
 
     return (
       <div className="App">
-      <ParentComp/>
-        {/* <FragmentDemo/> */}
-        {/* <Table/> */}
+      <FRParentInput/>
+      {/* <RefsDemo/> */}
+      {/* <ParentComp/> */}
+      {/* <FragmentDemo/> */}
+      {/* <Table/> */}
       {/* <LifecycleA/> */}
       {/* <Form/>  */}
       {/* <h1 className="error">Error</h1> */}
