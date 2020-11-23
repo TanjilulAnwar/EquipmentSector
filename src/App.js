@@ -1,8 +1,17 @@
 import React, { Component } from 'react';
 // import logo from './logo.svg';
 import './App.css';
+//import ClickCounter from './HComponents/ClickCounter';
+
+import Counter from './HComponents/Counter';
+//import User from './HComponents/User';
+//import ErrorBoundary from './components_new/ErrorBoundary';
+//import Hero from './components_new/Hero';
+//import ClickCounter from './HComponents/ClickCounter';
+//import HoverCounter from './HComponents/HoverCounter';
+//import PortalDemo from './components_new/PortalDemo';
 //import FocusInput from './components_new/FocusInput';
-import FRParentInput from './components_new/FRParentInput';
+//import FRParentInput from './components_new/FRParentInput';
 //import ParentComp from './components_new/ParentComp';
 //import RefsDemo from './components_new/RefsDemo';
 //import PureComp from './components_new/PureComp';
@@ -25,7 +34,8 @@ import FRParentInput from './components_new/FRParentInput';
 //import LifecycleA from './components/LifecycleA'
 //import FragmentDemo from './components_new/FragmentDemo'
 //import Table from './components_new/Table';
-
+ import ClickCounter2 from './HComponents/ClickCounter2';
+ import HoverCounter2 from './HComponents/HoverCounter2';
 
 class App extends Component{
 
@@ -33,7 +43,24 @@ class App extends Component{
 
     return (
       <div className="App">
-      <FRParentInput/>
+      <Counter render={(count , incrementCount)=><ClickCounter2 count={count} incrementCount={incrementCount}/>}/>
+      <Counter render={(count , incrementCount)=><HoverCounter2 count={count} incrementCount={incrementCount}/>}/>
+      {/* <User name={(isLoggedIn)=> isLoggedIn?"Tanjilul": "Guest"}/> */}
+      {/* <ClickCounter2/>
+      <HoverCounter2/> */}
+      {/* <ClickCounter name="Tanjilul"/>
+      <HoverCounter/> */}
+      {/* <ErrorBoundary>
+      <Hero heroName="Batman"/>
+      </ErrorBoundary>
+      <ErrorBoundary>
+      <Hero heroName="Superman"/>
+      </ErrorBoundary>
+      <ErrorBoundary>
+      <Hero heroName="Joker"/>
+      </ErrorBoundary> */}
+      {/* <PortalDemo/> */}
+      {/* <FRParentInput/> */}
       {/* <RefsDemo/> */}
       {/* <ParentComp/> */}
       {/* <FragmentDemo/> */}
